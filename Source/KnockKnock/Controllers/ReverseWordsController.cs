@@ -12,6 +12,8 @@ namespace KnockKnock.Controllers
     {
         public string Get(string sentence)
         {
+            System.Diagnostics.Trace.TraceInformation("ReverseWords: sentence=" + sentence);
+
             var ret = new List<string>();
             foreach(var word in sentence.Split(" ".ToCharArray()).ToList())
             {

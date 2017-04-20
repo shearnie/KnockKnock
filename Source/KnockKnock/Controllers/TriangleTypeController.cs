@@ -11,6 +11,8 @@ namespace KnockKnock.Controllers
     {
         public string Get(int a, int b, int c)
         {
+            System.Diagnostics.Trace.TraceInformation("TriangleType: a=" + a);
+
             if (((b + c) < a) || ((a + c) < b) || ((a + b) < c))
                 return "Error";
 

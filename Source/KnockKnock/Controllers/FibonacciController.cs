@@ -11,6 +11,8 @@ namespace KnockKnock.Controllers
     {
         public long Get(int n)
         {
+            System.Diagnostics.Trace.TraceInformation("Fibonacci: n=" + n);
+
             long f = 0;
             long s = 1;
             long p = f + s;

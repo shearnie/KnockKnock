@@ -11,6 +11,8 @@ namespace KnockKnock.Controllers
     {
         public string Get()
         {
+            System.Diagnostics.Trace.TraceInformation("Token");
+
             return "Here is a token";
         }
     }
